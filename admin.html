@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Attdance</b><br> to track your college bus</h1>
+    <form class="box" action="admin.html" method="POST">
+        <label for="clgname"  >clgname:</label>
+        <input id="clgname" type="text" ><br>
+        <label for="bus"  >busroute:</label>
+        <input id="bus" type="text" ><br>
+        
+        
+        
+    </form>
+    <input id="in" type="submit" value="login" onclick="validate()"><br>
+    <a style="color:blue" href="https://www.instagram.com/kavithaiyum.isaiyum/">forget password?</a><br>
+    <button id="sg">SIGNIN</button>
+    <script>
+        function validate()
+        {
+            
+            var pa = document.getElementById("bus").value;
+            var clgna = document.getElementById("clgname").value;
+            if(pa=="11" && clgna=="eec")
+            {
+                window.location = "busatd.html";
+            }
+            else
+            {
+                alert("Enter correct username and password");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+            text-align: center;
+            margin-top: 100px;
+
+        }
+        label{
+            padding: 5px 5px 5px;
+
+        }
+        input{
+            padding: 5px 5px 5px;
+            margin: 5px ;
+
+        }
+        button{
+        
+            
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: aqua;
+            font-style: oblique;
+            transition-duration: 0.4s;
+
+        }
+        button:hover{
+            background-color: white;
+            color:black;
+            border: 2px solid aqua;
+        }
+        #in{
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: aqua;
+            font-style: oblique;
+            transition-duration: 0.4s;
+        }
+        #in:hover{
+            background-color: white;
+            color:black;
+            border: 2px solid aqua;
+        }
+    
+        </style>
+    
+</body>
+</html>

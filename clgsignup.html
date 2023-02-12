@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signcl</title>
+</head>
+<body>
+    <h1><b>LOGIN</b><br> to track your college bus</h1>
+    <form class="box" action="clgsignup.php" method="post">
+        <label for="schname"  >clg name:</label>
+        <input id="schname" type="text" name="schlname"/><br>
+        <label for="Usernamee"  >Username:</label>
+        <input id="Usernamee" type="text" name="usname"/><br>
+        <label for="pass" >Password:</label>
+        <input id="pass" type="password" name="pass" /><br>
+        
+        
+    </form>
+    
+    <button id="sg" onclick="op()">SIGNIN</button>
+    <script>
+        function op()
+        {
+            var uss = document.getElementById("Usernamee").value;
+            var paa = document.getElementById("pass").value;
+            var schna = document.getElementById("schname").value;
+             window.location = "clglog.html";
+            
+            
+        }
+    </script>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+            text-align: center;
+            margin-top: 100px;
+
+        }
+        label{
+            padding: 5px 5px 5px;
+
+        }
+        input{
+            padding: 5px 5px 5px;
+            margin: 5px ;
+
+        }
+        button{
+        
+            
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: aqua;
+            font-style: oblique;
+            transition-duration: 0.4s;
+
+        }
+        button:hover{
+            background-color: white;
+            color:black;
+            border: 2px solid aqua;
+        }
+        #in{
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: aqua;
+            font-style: oblique;
+            transition-duration: 0.4s;
+        }
+        #in:hover{
+            background-color: white;
+            color:black;
+            border: 2px solid aqua;
+        }
+    
+        </style>
+    
+</body>
+</html>
+</body>
+</html>
